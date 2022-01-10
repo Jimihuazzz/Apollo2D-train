@@ -922,14 +922,13 @@ Strategy::getFormation( const WorldModel & wm ) const
     //
     // before kick off
     //
-    if ( wm.gameMode().type() == GameMode::BeforeKickOff
-         )
+    if ( wm.gameMode().type() == GameMode::BeforeKickOff)
     {
         return M_before_kick_off_formation;
     }
 
     //after our goal --changed by sy
-    if(( wm.gameMode().type() == GameMode::AfterGoal_ )
+    if( wm.gameMode().type() == GameMode::AfterGoal_ )
     {
         return M_AfterGoal_formation;
     }
