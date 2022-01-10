@@ -67,6 +67,7 @@ enum SituationType {
 
 class Strategy {
 public:
+    static const std::string GET_GOAL_CONF;
     static const std::string BEFORE_KICK_OFF_CONF;
     static const std::string NORMAL_FORMATION_CONF;
     static const std::string DEFENSE_FORMATION_CONF;
@@ -107,7 +108,7 @@ private:
     //
 
     rcsc::Formation::Ptr M_before_kick_off_formation;
-
+    rcsc::Formation::Ptr M_AfterGoal_formation;
     rcsc::Formation::Ptr M_normal_formation;
     rcsc::Formation::Ptr M_defense_formation;
     rcsc::Formation::Ptr M_offense_formation;
